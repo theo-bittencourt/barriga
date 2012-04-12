@@ -1,0 +1,7 @@
+#mySlider.royalSlider.default
+  -# Container of slides(images)
+  %ul.royalSlidesContainer
+    -# Slides
+    - for img in images_path
+      %li.royalSlide
+        = image_tag img, { :class => "royalImage" }
