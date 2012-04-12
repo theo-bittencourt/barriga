@@ -4,7 +4,6 @@
 @import "compass/css3"
 
 $font-color:  #2a2a2a
-$bege-fundo: #eadbc1
 $font-family: sans-serif
 $base-font-size:   14px
 $base-line-height: 19px
@@ -12,65 +11,43 @@ $base-line-height: 19px
 @include global-reset
 
 @mixin align-center
-	margin-left: auto
-	margin-right: auto
+  margin-left: auto
+  margin-right: auto
 
 
 body 
-	font-family: $font-family
-	color: $font-color
-	font-size: $base-font-size
-	line-height: $base-line-height
-	background-color: $bege-fundo 
+  font-family: $font-family
+  color: $font-color
+  font-size: $base-font-size
+  line-height: $base-line-height
+  background-image: url(/images/textura-bg.gif)            
+
+#container
+
+#moldura
+  width: 1000px
+  height: 609px
+  margin-top: 70px
+  @include align-center
+  background-image: url(/images/frame.jpg)
 
 
 #logo
-	width: 220px
-	height: 110px
-	background-color: grey
-	@include align-center
+  width: 315px
+  height: 107px
+  @include align-center
+  position: relative
+  top: -660px
 
-
-#fundo-de-madeira-do-topo
-	@include box-sizing(border-box)
-	height: 240px
-	background-color: brown
-	padding-top: 20px
-
-
-#faixa-verde-do-topo
-	height: 50px
-	background-color: DarkOliveGreen
 
 #galeria-de-imagens
-	@include align-center
-	background-color: grey
-	width: 770px
-	height: 310px 
-	margin-top: -135px 
-	// Caso o elemento estivesse com position:relative e top:-135px, 
-	// o espaço ocupado anteriormente seria preservado. 
-	// Usando margem negativa este espaço não é preservado.
-	
-#barra-de-divisao-com-logo
-	width: 100%
-	height: 40px
-	background-color: grey
-	margin: 20px 0px
+  @include align-center
+  background-color: grey
+  width: 770px
+  height: 310px 
+  margin-top: -135px 
+  // Caso o elemento estivesse com position:relative e top:-135px, 
+  // o espaço ocupado anteriormente seria preservado. 
+  // Usando margem negativa este espaço não é preservado.
 
-#conheca-a-nebbiolo
-	img 
-		display: block
-
-#novidades
-	@include box-sizing(border-box)
-	width: 416px
-	height: 250px
-	float: right
-	@media screen and (min-width: 1210px)
-		background-image: url("/images/novidades-frame.png")
-	padding: 40px 25px
-	
-	.twtr-hd, .twtr-user, .twtr-ft, .twtr-tweet-text em
-		display: none
-	
+  
