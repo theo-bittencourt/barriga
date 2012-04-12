@@ -1,0 +1,22 @@
+#menu
+  %ul
+    %li#produtos-li.menu-item.dropdown
+      %a{ :"data-toggle" => "dropdown", href: "#produtos-li" } produtos
+      %ul.dropdown-menu
+        %li.menu-subitem
+          %a{ href: "/produtos/barriga-de-freira.html" } barriga de freira
+        %li.menu-subitem
+          %a{ href: "/produtos/pastel-de-santa-clara.html" } pastel de santa clara
+        %li.menu-subitem
+          %a{ href: "/produtos/bala-de-ovos.html" } bala de ovos
+        %li.menu-subitem
+          %a{ href: "/produtos/toucinho-do-ceu.html" } toucinho do céu
+        %li.dropmenu-footer
+          = image_tag "dropdown_background_footer.png"
+    
+    %li.menu-item
+      %a{ href: "/pedidos.html" } pedidos
+    %li.menu-item
+      %a{ href: "/historico.html" } histórico
+    %li.menu-item
+      %a{ href: "/creditos.html" } créditos
