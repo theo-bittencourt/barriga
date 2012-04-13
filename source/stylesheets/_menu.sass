@@ -12,7 +12,10 @@
     
     .dropdown-menu
         background-color: $beje-barriga
+        background-color: transparent
         border: none
+        @include box-shadow(none)
+        top: 31px
         
     .menu-item
         font-size: 15px
@@ -21,9 +24,14 @@
         text-align: center
         padding: 8px
         .menu-subitem
+            background-color: $beje-barriga
             font-size: 12px
             text-align: left
             a:hover
                 background-color: $azul-barriga
                 color: white
+        .dropmenu-footer                background-color: white
         .dropmenu-footer
+            background-color: transparent
+            img
+                width: 190px
