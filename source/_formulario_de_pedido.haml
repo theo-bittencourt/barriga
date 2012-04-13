@@ -1,0 +1,36 @@
+%form#ss-form{:action => "https://docs.google.com/a/arterial.tv/spreadsheet/formResponse?formkey=dERrMTYyV2tWZ0czXzJTOE9La2dwUnc6MQ&theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&ifq", :method => "POST"}
+
+  .errorbox-good
+    .ss-item.ss-item-required.ss-text
+      .ss-form-entry
+        %label.ss-q-title{:for => "entry_0"}
+          Nome
+        %label.ss-q-help{:for => "entry_0"}
+        %input#entry_0.nome-input{:name => "entry.0.single", :type => "text", :value => ""}/
+  .errorbox-good
+    .ss-item.ss-item-required.ss-text
+      .ss-form-entry
+        %label.ss-q-title{:for => "entry_1"}
+          Email
+        %label.ss-q-help{:for => "entry_1"}
+        %input#entry_1.email-input{:name => "entry.1.single", :type => "text", :value => ""}/
+  .errorbox-good
+    .ss-item.ss-text
+      .ss-form-entry
+        %label.ss-q-title{:for => "entry_3"}
+          Telefone
+        %label.ss-q-help{:for => "entry_3"}
+        %input#entry_3.telefone-input{:name => "entry.3.single", :type => "text", :value => ""}/
+  .errorbox-good
+    .ss-item.ss-paragraph-text
+      .ss-form-entry
+        %label.ss-q-title{:for => "entry_2"}
+          Pedido
+        %label.ss-q-help{:for => "entry_2"}
+        %textarea#entry_2.mensagem-input{:cols => "90", :name => "entry.2.single", :rows => "5"}
+
+  %input{:name => "pageNumber", :type => "hidden", :value => "0"}
+    %input{:name => "backupCache", :type => "hidden", :value => ""}
+      .ss-item.ss-navigate
+        .ss-form-entry
+          %input.enviar-input{:name => "submit", :type => "submit", :value => ""}/
