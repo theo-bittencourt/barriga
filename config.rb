@@ -1,5 +1,8 @@
 ### 
-# Compass
+# Compass 
+
+http_images_path = "source/images/"
+
 ###
 
 # Susy grids in Compass
@@ -60,13 +63,13 @@
 # end
 
 # Change the CSS directory
-# set :css_dir, "alternative_css_directory"
+# set :css_dir, "rra/stylesheets"
 
 # Change the JS directory
-# set :js_dir, "alternative_js_directory"
+# set :js_dir, "rra/javascripts"
 
 # Change the images directory
-# set :images_dir, "alternative_image_directory"
+# set :images_dir, "rra/images"
 
 # Build-specific configuration
 configure :build do
@@ -80,7 +83,7 @@ configure :build do
   # activate :cache_buster
   
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
