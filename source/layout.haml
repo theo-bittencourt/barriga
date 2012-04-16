@@ -7,7 +7,7 @@
     %title Barriga de Freira
     
     = stylesheet_link_tag %w(bootstrap.min royalslider/royalslider.css royalslider/royalslider-skins/default/default.css style.css)
-    = javascript_include_tag %w(jquery.min.js jquery.easing.1.3.min.js bootstrap-dropdown.js css3-mediaqueries.js royal-slider-8.1.min.js script.js)
+    
     
   %body
     #logo
@@ -18,3 +18,5 @@
       
       #conteudo
         = yield
+  
+  = javascript_include_tag %w(jquery.min.js jquery.easing.1.3.min.js bootstrap-dropdown.js css3-mediaqueries.js royal-slider-8.1.min.js script.js)
