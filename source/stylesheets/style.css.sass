@@ -69,4 +69,21 @@ body
             margin-top: 10px
             z-index: 50
             +align-center
-        @import "pagina_pedido"
+        @import "pagina_pedido"        #creditos
+            width: 45%
+            height: 100%
+            background: image_url("creditos_bg.png") no-repeat
+            padding-top: 150px
+            +box-sizing(border-box)
+            text-align: right
+            .o-que
+                padding: 5px 0 
+                border-top: 1px solid $azul-barriga
+                font-size: 18px
+                color: $azul-barriga
+            .quem
+                color: $beje-escuro-barriga
+                font-size: 15px
+                a
+                    color: inherit
+    
