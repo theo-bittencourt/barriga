@@ -12,20 +12,16 @@
         background: $azul-barriga
     
     
-    p#atendemos
-        font-size: 14px
-        color: $marrom-barriga
-        text-align: center
-        margin-bottom: 20px
     #box-monica-nana
         color: $azul-barriga
         text-align: center
         text-transform: uppercase
-        margin: 0 auto
+        margin: 0 auto 20px
         width: 237px
         height: 226px
         background: image_url('box_monica_nana.png') no-repeat 0 0
-        padding: 40px 0px                             
+        padding-top: 40px
+        +box-sizing(border-box)                            
         .hr
             width: 60%
             margin: 5px auto 10px
@@ -34,6 +30,10 @@
             height: 12px
             margin: 4px auto
             background: image_url('cruz_malta_5x.png')
+    p#atendemos
+        font-size: 14px
+        color: $marrom-barriga
+        text-align: center
 
 #conteudo-direita-pedido
     width: 420px
