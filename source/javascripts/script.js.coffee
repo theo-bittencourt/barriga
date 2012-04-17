@@ -1,3 +1,5 @@
+#= require bootstrap-dropdown
+
 $ ->
   $("#mySlider").royalSlider ->
     directionNavAutoHide: true
