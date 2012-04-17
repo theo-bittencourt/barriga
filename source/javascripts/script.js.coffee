@@ -9,7 +9,9 @@ $ ->
     
     
     # jQuery.validator.addMethod( "telefone", ( (value, element) -> @optional(element) || /.+{10,15}/.test(value) ), "Please specify the correct domain for your documents" )
+    
     $("#ss-form input[name='entry.3.single']").mask( "(99) 9999-9999" )
+    
     $("#ss-form").validate {
         rules: { 
             "entry.0.single": { required: true }                # Nome
