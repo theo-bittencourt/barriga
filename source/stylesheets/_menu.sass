@@ -17,8 +17,9 @@
         border: none
         @include box-shadow(none)
         top: 31px
-        .menu-subitem:first-child a
-            border-top: 1px solid #888
+        .menu-subitem:first-child
+            padding-top: 10px
+            +box-shadow(black 0 5px 10px -5px inset)
         .dropmenu-footer img
             position: relative
             top: -15px
