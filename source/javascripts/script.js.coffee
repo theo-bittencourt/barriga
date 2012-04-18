@@ -23,7 +23,7 @@ $ ->
             "entry.0.single": "Informe seu nome"
             "entry.1.single": "Informe seu email"
             "entry.3.single": { required: "Informe seu email", telefone: "Incorreto" }
-            "entry.2.single": { required: "Informe seu email", email: "Incorreto" }
+            "entry.2.single": { required: "Informe seu pedido" }
         }
         # submitHandler: ->
         # $(event.target).ajaxSubmit()
