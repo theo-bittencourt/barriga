@@ -3,16 +3,12 @@
     height: 37px
     text-transform: uppercase
     text-align: center
-    a
-        padding: 8px 20px
-        color: $azul-barriga
-        &:hover
-            text-decoration: none
     margin-top: -37px
     
     .menu-item-gap
         +inline-block
         width: 55px
+    
     
     .dropdown-menu
         background-color: transparent
@@ -61,6 +57,9 @@
             font-size: 12px
             text-align: left
             border-right: 1px solid #999
+            a
+                color: $azul-barriga
+                padding: 8px 20px
             a:hover
                 background-color: white
         .dropmenu-footer
