@@ -28,11 +28,34 @@
             z-index: -10
         
     .menu-item
-        font-size: 15px
-        display: inline-block
-        width: 150px
-        text-align: center
-        padding: 8px
+        +inline-block
+        & > a
+            span
+                font-size: 15px
+                line-height: 15px 
+            text-align: left
+            +inline-block
+            padding: 8px 5px
+            color: $azul-barriga
+            &:hover
+                text-decoration: none
+                .icone-menu
+                    background-position: 0 -22px
+            &[href="#produtos-li"] .icone-menu
+                background-image: image_url("icones_menu/produtos_icones.gif")
+            &[href="/pedidos.html"] .icone-menu
+                background-image: image_url("icones_menu/pedidos_icones.gif")
+            &[href="/historico.html"] .icone-menu
+                background-image: image_url("icones_menu/historico_icones.gif")
+            &[href="/creditos.html"] .icone-menu
+                background-image: image_url("icones_menu/creditos_icones.gif")
+            .icone-menu
+                background-position: 0 0
+                background-repeat: no-repeat
+                +inline-block
+                height: 22px
+                width: 22px
+                margin: -8px 0 0 5px
         .menu-subitem
             background-color: $beje-barriga
             font-size: 12px
