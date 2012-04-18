@@ -1,7 +1,9 @@
 #menu
   %ul
     %li#produtos-li.menu-item.dropdown
-      %a{ :"data-toggle" => "dropdown", href: "#produtos-li" } produtos
+      %a{ :"data-toggle" => "dropdown", href: "#produtos-li" } 
+        %span produtos
+        .icone-menu
       %ul.dropdown-menu
         %li.menu-subitem
           %a{ href: "/produtos/barriga-de-freira.html" } barriga de freira
@@ -13,10 +15,18 @@
           %a{ href: "/produtos/toucinho-do-ceu.html" } toucinho do céu
         %li.dropmenu-footer
           = image_tag "dropdown_background_footer.png"
-    
+    .menu-item-gap
     %li.menu-item
-      %a{ href: "/pedidos.html" } pedidos
+      %a{ href: "/pedidos.html" } 
+        %span pedidos
+        .icone-menu
+    .menu-item-gap
     %li.menu-item
-      %a{ href: "/historico.html" } histórico
+      %a{ href: "/historico.html" }
+        %span histórico
+        .icone-menu
+    .menu-item-gap
     %li.menu-item
-      %a{ href: "/creditos.html" } créditos
+      %a{ href: "/creditos.html" }
+        %span créditos
+        .icone-menu
