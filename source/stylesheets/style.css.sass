@@ -46,11 +46,24 @@ p
 
 
 #logo
-    width: 315px
-    height: 107px
+    $logo-width: 315px
+    $logo-height: 107px
+    width: $logo-width
+    height: $logo-height
     +align-center
-    position: relative
-    top: 55px
+    margin-top: 80px
+    margin-bottom: -54px
+    img
+        width: $logo-width
+        height: $logo-height
+    @media screen and (max-height: 715px)
+        margin-top: 20px
+        margin-bottom: -73px
+        width: $logo-width * 0.8
+        height: $logo-height * 0.8
+        img
+            width: $logo-width * 0.8
+            height: $logo-height * 0.8
 
 
 #moldura
