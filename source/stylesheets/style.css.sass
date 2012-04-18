@@ -68,13 +68,27 @@ p
 
 
 #moldura
-    width: 1000px
-    height: 609px
-    +align-center
     background-image: image_url("frame.jpg")
+    background-repeat: no-repeat
+    +align-center
     +box-sizing(border-box)
-    padding: 130px 145px 127px
+    height: $moldura-height
+    width: $moldura-width
+    padding: $size-top-moldura $size-right-moldura $size-bottom-moldura $size-left-moldura
     
+    @media screen and (max-height: 715px)
+        background-position: 0 0
+    
+    $offset-768: 125px
+    @media screen and (max-width: 768px)
+        background-position: (0 - $offset-768) 0
+        width: $moldura-width - (2*125)
+        padding-left: $size-left-moldura - $offset-768
+        padding-right: $size-right-moldura - $offset-768
+        
+    @media screen and (max-height: 715px) and (max-width: 768px)
+        background-position: (0 - $offset-768) 0px
+        
     #conteudo
         position: relative
         width: 100%
