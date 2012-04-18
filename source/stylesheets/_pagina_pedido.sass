@@ -54,7 +54,12 @@
     height: 100%
     background: image_url("pedido_caixa.jpg")
     #placa-confirmacao-pedido
-        width: 435px
-        height: 45px
+        $placa-confirmacao-pedido-width: 435px
+        $placa-confirmacao-pedido-height: 45px
+        width: $placa-confirmacao-pedido-width
+        height: $placa-confirmacao-pedido-height
         +align-center
-        background: image_url("placa_pedido_confirmacao.png") 0 0 no-repeat
+        background: image_url("placa_pedido_confirmacao_com_texto.png") 0 0 no-repeat
+        position: absolute
+        bottom: 10px
+        left: ($conteudo-width / 2) - ($placa-confirmacao-pedido-width / 2)
