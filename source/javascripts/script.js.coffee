@@ -1,6 +1,24 @@
 #= require bootstrap-dropdown
 
 $ ->
+    
+    current_url_path = window.location.pathname
+
+    @active_current_menu_item = (element) ->
+        $(".menu-item a").removeClass('active')
+        element.parent('a').addClass("active")
+    
+    if /produtos/.exec(current_url_path)
+        @active_current_menu_item($(".menu-item span:contains('produtos')"))
+    if /pedidos/.exec(current_url_path)
+        @active_current_menu_item($(".menu-item span:contains('pedidos')"))
+    if /historico/.exec(current_url_path)
+        @active_current_menu_item($(".menu-item span:contains('histórico')"))
+    if /creditos/.exec(current_url_path)
+        @active_current_menu_item($(".menu-item span:contains('créditos')"))
+    
+    
+    
     $("#mySlider").royalSlider ->
         directionNavAutoHide: true
     
