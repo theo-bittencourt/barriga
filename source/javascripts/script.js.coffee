@@ -1,4 +1,10 @@
 #= require bootstrap-dropdown
+#= require jquery.easing.1.3.min
+#= require jquery.validate.min
+#= require jquery.form
+#= require jquery.maskedinput-1.3.min
+#= require css3-mediaqueries
+#= require royal-slider-8.1.min
 
 $ ->
     
