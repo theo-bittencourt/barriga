@@ -4,8 +4,27 @@
     .royalControlNavOverflow
         display: none
 .legenda
-    width: 413px
+    width: 550px
     position: relative
-    margin-top: 10px
+    margin-top: 7px
     z-index: 50
+    text-align: center
     +align-center
+    .arabesco-esquerda
+        background: image_url("arabesco_esquerda.png") 0 0 no-repeat
+        height: 11px
+        width: 31px
+        +inline-block
+    .arabesco-direita
+        background: image_url("arabesco_direita.png") 0 0 no-repeat
+        height: 11px
+        width: 31px
+        +inline-block
+    .texto-legenda
+        +inline-block
+        text-align: center
+        padding: 0 3px
+        color: $azul-barriga
+        font-size: 24px
+        text-transform: uppercase
+        letter-spacing: 1px
