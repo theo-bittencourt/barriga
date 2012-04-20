@@ -24,8 +24,6 @@ $ ->
         @active_current_menu_item($(".menu-item span:contains('créditos')"))
     
     
-    
-    $("#mySlider").royalSlider ->
     $("#home-slider").royalSlider
         captionShowEffects:["moveleft", "fade"]
         directionNavAutoHide: true
@@ -46,8 +44,10 @@ $ ->
             
         
     
-    $("#historico-slider").royalSlider ->
-        directionNavAutoHide: true
+    
+    $("#mySlider").royalSlider()
+    
+    $("#historico-slider").royalSlider()
     
     
     # jQuery.validator.addMethod( "telefone", ( (value, element) -> @optional(element) || /.+{10,15}/.test(value) ), "Please specify the correct domain for your documents" )
