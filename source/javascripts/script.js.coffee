@@ -26,7 +26,25 @@ $ ->
     
     
     $("#mySlider").royalSlider ->
+    $("#home-slider").royalSlider
+        captionShowEffects:["moveleft", "fade"]
         directionNavAutoHide: true
+        slideshowAutoStart: true
+        slideshowEnabled: true
+        slideshowPauseOnHover: true
+        slideshowDelay: 5000
+        afterSlideChange: ->
+            currentSlide = this.currentSlideId
+            legenda = $(".legenda-home")
+            if currentSlide is 0
+                legenda.addClass("legenda-quadro")
+                legenda.find(".texto-legenda").text("")
+            else
+                legenda.removeClass("legenda-quadro")
+                texto_legenda = $(".royalSlide").eq(currentSlide).attr("data-legenda-texto")
+                $(".legenda-home .texto-legenda").text(texto_legenda)
+            
+        
     
     $("#historico-slider").royalSlider ->
         directionNavAutoHide: true
