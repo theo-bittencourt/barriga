@@ -1,5 +1,13 @@
-= partial "royalslider.haml", :locals => { :images_path => [  "fotos/foto_bala_1.jpg", "fotos/foto_bala_2.jpg", "fotos/foto_bala_3.jpg", "fotos/foto_bala_4.jpg"] }
-                                                              
+:erb
+  <%= partial "royalslider.haml", 
+        :locals => { :images_path => %w{  galeria_produtos/bala/bala_de_ovos_close2.jpg
+                                          galeria_produtos/bala/bala_de_ovos_porcelana.jpg
+                                          galeria_produtos/bala/bala_de_ovos_cristal.jpg
+                                          galeria_produtos/bala/foto_bala_2.jpg
+                                          
+                                       } }
+
+  %>
 
 .legenda
   .arabesco-esquerda
