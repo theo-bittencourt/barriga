@@ -104,3 +104,16 @@ p
         @import "pagina_pedido"
         @import "historico"
         @import "creditos"
+
+.royalSlider.default
+    a.arrow
+        width: 37px
+        height: 54px
+        +opacity(1)
+        &.disabled
+            display: none
+        &.right
+            background: image_url("setas_slide_direita.png") 0 0 no-repeat        
+        &.left
+            background: image_url("setas_slide_esquerda.png") 0 0 no-repeat
+        
