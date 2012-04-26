@@ -8,6 +8,7 @@
 
 $ ->
     
+    # Ativa item do menu referente à página atual
     current_url_path = window.location.pathname
 
     @active_current_menu_item = (element) ->
