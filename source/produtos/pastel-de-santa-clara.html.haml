@@ -1,4 +1,10 @@
-= partial "royalslider.haml", :locals => { :images_path => [  "fotos/foto_pastel_1.jpg", "fotos/foto_pastel_2.jpg"]}
+:erb
+  <%= partial "royalslider.haml", 
+        :locals => { :images_path => %w{  galeria_produtos/pastel/pastel_santa_clara_close.jpg
+                                          galeria_produtos/pastel/pastel_santa_clara_porcelana.jpg
+                                          galeria_produtos/pastel/pastel_santa_clara_porcelana2.jpg 
+                                       } }
+  %>
 
 
 .legenda
