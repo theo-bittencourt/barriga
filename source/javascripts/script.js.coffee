@@ -31,6 +31,8 @@ $ ->
         slideshowEnabled: true
         slideshowPauseOnHover: true
         slideshowDelay: 5000
+        slideTransitionSpeed: 1500
+        slideTransitionEasing: "easeInOutSine"
         afterSlideChange: ->
             currentSlide = this.currentSlideId
             legenda = $(".legenda-home")
@@ -41,13 +43,15 @@ $ ->
                 legenda.removeClass("legenda-quadro")
                 texto_legenda = $(".royalSlide").eq(currentSlide).attr("data-legenda-texto")
                 $(".legenda-home .texto-legenda").text(texto_legenda)
-            
-        
+                
     
+    $("#mySlider").royalSlider
+      slideTransitionSpeed: 1500
+      slideTransitionEasing: "easeInOutSine"
     
-    $("#mySlider").royalSlider()
-    
-    $("#historico-slider").royalSlider()
+    $("#historico-slider").royalSlider
+      slideTransitionSpeed: 1500
+      slideTransitionEasing: "easeInOutSine"
     
     
     # jQuery.validator.addMethod( "telefone", ( (value, element) -> @optional(element) || /.+{10,15}/.test(value) ), "Please specify the correct domain for your documents" )
