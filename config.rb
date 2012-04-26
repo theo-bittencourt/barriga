@@ -6,6 +6,9 @@ require "bootstrap-sass"
 
 http_images_path = "source/images/"
 
+activate :directory_indexes
+
+
 ###
 
 # Susy grids in Compass
