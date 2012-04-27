@@ -26,8 +26,6 @@ $ ->
     
     
     $("#home-slider").royalSlider
-        captionShowEffects:["moveleft", "fade"]
-        directionNavAutoHide: true
         slideshowAutoStart: true
         slideshowEnabled: true
         slideshowPauseOnHover: true

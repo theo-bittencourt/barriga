@@ -106,14 +106,15 @@ p
         @import "creditos"
 
 .royalSlider.default
-    a.arrow
+    a.arrow, a.arrow:hover
         width: 37px
         height: 54px
         +opacity(1)
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
         &.disabled
             display: none
         &.right
-            background: image_url("setas_slide_direita.png") 0 0 no-repeat        
+            background: transparent image_url("setas_slide_direita.png") 0 0 no-repeat        
         &.left
-            background: image_url("setas_slide_esquerda.png") 0 0 no-repeat
+            background: transparent image_url("setas_slide_esquerda.png") 0 0 no-repeat
         
