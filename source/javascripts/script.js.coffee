@@ -2,7 +2,7 @@
 #= require jquery.easing.1.3.min
 #= require jquery.validate.min
 #= require jquery.form
-#= require jquery.maskedinput-1.3.min
+#= require jquery.mask.min
 #= require css3-mediaqueries
 #= require royal-slider-8.1.min
 
@@ -52,23 +52,33 @@ $ ->
       slideTransitionSpeed: 1500
       slideTransitionEasing: "easeInOutSine"
 
+    # Phone mask
+    # http://www.igorescobar.com/blog/2012/07/29/mascara-javascript-para-os-novos-telefones-de-sao-paulo/
+    `var maskBehavior = function (val) {
+      return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+    options = {
+      onKeyPress: function(val, e, field, options) {
+          field.mask(maskBehavior.apply({}, arguments), options);
+      },
+      placeholder: "(ddd) 00000-0000"
+    };`
 
-    # jQuery.validator.addMethod( "telefone", ( (value, element) -> @optional(element) || /.+{10,15}/.test(value) ), "Please specify the correct domain for your documents" )
+    $("#ss-form input[name='entry.1000004']").mask(maskBehavior, options)
 
-    $("#ss-form input[name='entry.1000004']").mask( "(99) 9999-9999" )
 
     $("#ss-form").validate {
         rules: {
             "entry.1000000": { required: true }                # Nome
             "entry.1000001": { required: true, email: true }   # Email
-            "entry.1000003": {  }                              # Telefone
-            "entry.1000002": { required: true }                # Pedido
+            "entry.1000004": {  }                              # Telefone
+            "entry.1000003": { required: true }                # Pedido
         }
         messages: {
             "entry.1000000": "Informe seu nome"
             "entry.1000001": "Informe seu email"
-            "entry.1000003": { required: "Informe seu email", telefone: "Incorreto" }
-            "entry.1000002": { required: "Informe seu pedido" }
+            "entry.1000004": { required: "Informe seu telefone"}
+            "entry.1000003": { required: "Informe seu pedido" }
         }
         # submitHandler: ->
         # $(event.target).ajaxSubmit()
