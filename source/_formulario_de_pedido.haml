@@ -1,39 +1,34 @@
 %iframe{ src: "about:blank", name: "google_form_iframe", style: "display: none" }
 
-%form#ss-form{ target: "google_form_iframe", :action => "https://docs.google.com/a/barrigadefreira.com.br/spreadsheet/formResponse?formkey=dFgxcDFXck5tYmNWSkJBZFdSenp6REE6MA&theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&ifq", :method => "POST"}
+%form#ss-form{ target: "google_form_iframe", action: "https://docs.google.com/a/barrigadefreira.com.br/spreadsheet/formResponse?formkey=dFgxcDFXck5tYmNWSkJBZFdSenp6REE6MA&theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&ifq", method: "POST"}
 
   .errorbox-good
     .ss-item.ss-item-required.ss-text
       .ss-form-entry
-        %label.ss-q-title{:for => "entry_0"}
-          Nome
-        %label.ss-q-help{:for => "entry_0"}
-        %input#entry_0.nome-input{:name => "entry.0.single", :type => "text"}/
+        %label.ss-q-title{for: "entry_1000000"} Nome
+        %label.ss-q-help{for: "entry_1000000"}
+        %input#entry_1000000.nome-input{name: "entry.1000000.single", type: "text"}/
   .errorbox-good
     .ss-item.ss-item-required.ss-text
       .ss-form-entry
-        %label.ss-q-title{:for => "entry_1"}
-          Email
-        %label.ss-q-help{:for => "entry_1"}
-        %input#entry_1.email-input{:name => "entry.1.single", :type => "text" }/
+        %label.ss-q-title{for: "entry_1000001"} Email
+        %label.ss-q-help{for: "entry_1000001"}
+        %input#entry_1000001.email-input{name: "entry.1000001.single", type: "text" }/
   .errorbox-good
     .ss-item.ss-text
       .ss-form-entry
-        %label.ss-q-title{:for => "entry_3"}
-          Telefone
-        %label.ss-q-help{:for => "entry_3"}
-        %input#entry_3.telefone-input{:name => "entry.3.single", :type => "text", :value => ""}/
+        %label.ss-q-title{for: "entry_1000003"} Telefone
+        %label.ss-q-help{for: "entry_1000003"}
+        %input#entry_1000003.telefone-input{name: "entry.1000003.single", type: "text", value: ""}/
   .errorbox-good
     .ss-item.ss-paragraph-text
       .ss-form-entry
-        %label.ss-q-title{:for => "entry_2"}
-          Pedido
-        %label.ss-q-help{:for => "entry_2"}
-        %textarea#entry_2.mensagem-input{:cols => "90", :name => "entry.2.single", :rows => "5"}
+        %label.ss-q-title{for: "entry_1000002"} Pedido
+        %label.ss-q-help{for: "entry_1000002"}
+        %textarea#entry_1000002.mensagem-input{cols: "90", name: "entry.1000002.single", rows: "5"}
 
-  %input{:name => "pageNumber", :type => "hidden", :value => "0"}
-    %input{:name => "backupCache", :type => "hidden", :value => ""}
+  %input{name: "pageNumber", type: "hidden", value: "0"}
+    %input{name: "backupCache", type: "hidden", value: ""}
       .ss-item.ss-navigate
         .ss-form-entry
-          %input.enviar-input{:name => "submit", :type => "submit", :value => ""}/
-
+          %input.enviar-input{name: "submit", type: "submit", value: ""}/
