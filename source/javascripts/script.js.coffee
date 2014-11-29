@@ -55,20 +55,20 @@ $ ->
 
     # jQuery.validator.addMethod( "telefone", ( (value, element) -> @optional(element) || /.+{10,15}/.test(value) ), "Please specify the correct domain for your documents" )
 
-    $("#ss-form input[name='entry.1000003.single']").mask( "(99) 9999-9999" )
+    $("#ss-form input[name='entry.1000003']").mask( "(99) 9999-9999" )
 
     $("#ss-form").validate {
         rules: {
-            "entry.1000000.single": { required: true }                # Nome
-            "entry.1000001.single": { required: true, email: true }   # Email
-            "entry.1000003.single": {  }                              # Telefone
-            "entry.1000002.single": { required: true }                # Pedido
+            "entry.1000000": { required: true }                # Nome
+            "entry.1000001": { required: true, email: true }   # Email
+            "entry.1000003": {  }                              # Telefone
+            "entry.1000002": { required: true }                # Pedido
         }
         messages: {
-            "entry.1000000.single": "Informe seu nome"
-            "entry.1000001.single": "Informe seu email"
-            "entry.1000003.single": { required: "Informe seu email", telefone: "Incorreto" }
-            "entry.1000002.single": { required: "Informe seu pedido" }
+            "entry.1000000": "Informe seu nome"
+            "entry.1000001": "Informe seu email"
+            "entry.1000003": { required: "Informe seu email", telefone: "Incorreto" }
+            "entry.1000002": { required: "Informe seu pedido" }
         }
         # submitHandler: ->
         # $(event.target).ajaxSubmit()
