@@ -1,9 +1,9 @@
- /*  
- 
+ /*
+
  RoyalSlider
- 
+
  */
-.royalSlider {	
+.royalSlider {
 	position:relative;
 	/* set width and height of slider here, in px, % or em*/
 	width:600px;
@@ -19,20 +19,20 @@
 */
 
 .royalSlider .royalWrapper {
-	overflow:hidden;	
+	overflow:hidden;
 	position:relative;
 
-	width:100%; 
+	width:100%;
 	height:100%;
 }
 .royalSlider .royalSlide,
 .royalSlider .royalWrapper {
 	/* Bakground behind slides */
-	background: #111111; 
-	background: -moz-linear-gradient(top, #111111 0%, #242424 100%); 	
-	background: -webkit-linear-gradient(top, #111111 0%,#242424 100%); 
+	background: #111111;
+	background: -moz-linear-gradient(top, #111111 0%, #242424 100%);
+	background: -webkit-linear-gradient(top, #111111 0%,#242424 100%);
 	background: -o-linear-gradient(top, #111111 0%,#242424 100%);
-	background: -ms-linear-gradient(top, #111111 0%,#242424 100%); 	
+	background: -ms-linear-gradient(top, #111111 0%,#242424 100%);
 	background: linear-gradient(top, #111111 0%,#242424 100%);
 }
 /* slides holder, grabbing container */
@@ -50,23 +50,23 @@
 /* slide item */
 .royalSlider .royalSlide {
 	padding: 0 !important;
-	margin: 0 !important;	
+	margin: 0 !important;
 	border: 0 !important;
 	list-style: none !important;
-	
+
 	position:relative;
-	float:left;	
-	
-	overflow:hidden;	
+	float:left;
+
+	overflow:hidden;
 }
 
-/* 
+/*
 
-	Direction Navigation (arrows) 
+	Direction Navigation (arrows)
 
 */
 .royalSlider .arrow
-{	
+{
 	/*background:url(../img/controlsSprite.png) no-repeat 0 0;*/
 	background-color: #C00;
 	background-repeat: no-repeat;
@@ -75,27 +75,27 @@
 	/* change arrows size here */
 	width: 45px;
 	height: 90px;
-	
+
 	top:50%;
-	margin-top:-45px;	
-	
+	margin-top:-45px;
+
 	cursor: pointer;
 	display: block;
-	position: absolute;		
-	
+	position: absolute;
+
 	z-index:25;
-	
+
 }
 .royalSlider .arrow:hover {
-	
+
 }
 .royalSlider .arrow.disabled {
-	
+
 }
 /* left arrow */
 .royalSlider .arrow.left {
 	background-position: top left;
-	left: 0;	
+	left: 0;
 }
 /* right arrow */
 .royalSlider .arrow.right {
@@ -114,23 +114,23 @@
 	margin-top:-20px;
 	z-index:25;
 }
-/* This container is inside ".royalControlNavContainer"  
+/* This container is inside ".royalControlNavContainer"
    and is used for auto horizontal centering */
-.royalSlider .royalControlNavCenterer {	
+.royalSlider .royalControlNavCenterer {
 	float: left;
 	position: relative;
 	left: -50%;
 }
-/* Control navigation container*/ 
+/* Control navigation container*/
 .royalSlider .royalControlNavContainer {
 	float: left;
 	position: relative;
-	left: 50%;	
+	left: 50%;
 }
 
 
 /* Scrollable thumbnails containers */
-.royalSlider .royalControlNavThumbsContainer {		
+.royalSlider .royalControlNavThumbsContainer {
 	left:0;
 	position:relative;
 }
@@ -139,11 +139,11 @@
 	width: 100%;
 	position: relative;
 }
-.royalSlider .royalControlNavOverflow.royalThumbs {	
+.royalSlider .royalControlNavOverflow.royalThumbs {
 	width: auto;
 	position: relative;
 	overflow: hidden;
-	margin-top:4px;	
+	margin-top:4px;
 }
 
 
@@ -151,52 +151,52 @@
 
 
 
-/* 
+/*
 
 	Control navigation (bullets, thumbnails)
-	
+
 */
-.royalSlider .royalControlNavOverflow a{	
+.royalSlider .royalControlNavOverflow a{
 	background:#0C0 none no-repeat scroll 0 0;
-	
+
 	width:20px;
-	height:20px;	
-	
-	float:left;	
-	cursor:pointer;	
-	
+	height:20px;
+
+	float:left;
+	cursor:pointer;
+
 	position:relative;
 	display:block;
-	
-	text-indent: -9999px;	
+
+	text-indent: -9999px;
 }
 /* Current control navigation item */
-.royalSlider .royalControlNavOverflow a.current {	
-	background-color: #C00;	
+.royalSlider .royalControlNavOverflow a.current {
+	background-color: #C00;
 }
 /* Hover state navigation item */
-.royalSlider .royalControlNavOverflow a:hover {	
+.royalSlider .royalControlNavOverflow a:hover {
 	background-color: #00C;
 }
 
 /* Thumbnails */
-.royalSlider .royalControlNavOverflow a.royalThumb{	
+.royalSlider .royalControlNavOverflow a.royalThumb{
 	/*background: none no-repeat 0 0;*/
 	/*background-color: ;*/
 	width:144px;
-	height:60px;	
-	/* thumbnails spacing, use margin-right only */	
+	height:60px;
+	/* thumbnails spacing, use margin-right only */
 	margin-right:4px;
-	
+
 }
-.royalSlider .royalControlNavOverflow a.royalThumb.current {	
+.royalSlider .royalControlNavOverflow a.royalThumb.current {
 	background-position: -3px -3px  !important;
 	border:3px solid #C00 !important;
 	width:138px;
 	height:54px;
 }
-.royalSlider .royalControlNavOverflow a.royalThumb:hover {	
-	background-position: -3px -3px;	
+.royalSlider .royalControlNavOverflow a.royalThumb:hover {
+	background-position: -3px -3px;
 	border:3px solid #00C;
 	width:138px;
 	height:54px;
@@ -204,34 +204,34 @@
 
 
 
-/* 
+/*
 
-	Thumbnails navigation arrows 
-	
+	Thumbnails navigation arrows
+
 */
-.royalSlider .thumbsArrow {	
+.royalSlider .thumbsArrow {
 	width: 38px;
-	height: 68px;	
-	
+	height: 68px;
+
 	cursor: pointer;
 	display: block;
-	position: relative;		
+	position: relative;
 	z-index: 25;
-	
+
 	background: #C99;
-	
+
 }
-.royalSlider .thumbsArrow.left {	
+.royalSlider .thumbsArrow.left {
 	float: left;
 }
-.royalSlider .thumbsArrow.right {	
+.royalSlider .thumbsArrow.right {
 	float: right;
 }
 .royalSlider .thumbsArrow:hover  {
-	
+
 }
 .royalSlider .thumbsArrow.disabled {
-	
+
 }
 
 
@@ -243,7 +243,7 @@
 .royalSlider .royalCaption {
 	z-index:20;
 	display:block;
-	position:absolute;	
+	position:absolute;
 	left:0;
 	top:0;
 	/*font: normal normal normal 1em/1.5em Georgia, serif;
@@ -251,7 +251,7 @@
 }
 /* Caption item */
 .royalSlider .royalCaptionItem {
-	position:absolute;	
+	position:absolute;
 	left:0;
 	top: 20px;
 	margin: 0;
@@ -270,27 +270,27 @@
 	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:99;	
+	z-index:99;
 }
 /* Loading screen text ("Loading...") */
-.royalSlider .royalLoadingScreen p {		
+.royalSlider .royalLoadingScreen p {
 	width:100%;
-	position:absolute;	
+	position:absolute;
 	margin:0 auto;
 	top: 45%;
 	text-align:center;
 }
 
 /* single slide image preloader */
-.royalSlider .royalPreloader {	
+.royalSlider .royalPreloader {
 	position:absolute;
 	width:24px;
 	height:24px;
 	left:50%;
 	top:50%;
 	margin-left:-12px;
-	margin-top:-12px;	
-	z-index:0;	
+	margin-top:-12px;
+	z-index:0;
 	background-image:url(../img/preloader.gif);
 }
 
@@ -302,7 +302,6 @@
 .royalSlider .grab-cursor{cursor:move;}
 .royalSlider .grab-cursor{cursor:url("../img/cursors/grab.png") 8 8,-moz-grab;}
 .royalSlider .grab-cursor{*cursor:url(../img/cursors/grab.cur);}
-.royalSlider .grab-cursor{cursor:move\0/;} /* ie8 hack */
 
 .royalSlider .grabbing-cursor{cursor:move;}
 .royalSlider .grabbing-cursor{cursor:url("../img/cursors/grabbing.png") 8 8,-moz-grabbing;}
@@ -333,5 +332,5 @@
 	max-width:none;
 	margin:0;
 	padding: 0 !important;
-	border: 0 !important;	
+	border: 0 !important;
 }
